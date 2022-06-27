@@ -6,46 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGC - Company</title>
     <link rel="stylesheet" type="text/css" href="../style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
 </head>
 <body>
     <header>
-        
-        <div class="encabezado">
-           <!-- <a href="#"> <img src="./img/LOGO.PNG" alt="Logo"></a>-->
-            <div>
-                <h1>SGS - Company</h1>
-            </div>
-            <nav >
-                <ul >
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/services.html">Servicios</a></li>
-                    <li><a href="../pages/customers.html">Nuestros clientes</a></li>
-                    <li><a href="../pages/about.html">Sobre nosotros</a></li>
-                    <li><a href="#">Contacto</a> </li>
+       
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid navbootstrap">
+              <a class="navbar-brand" href="#">SGS - Company</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/services.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/customers.html">Nuestros Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/about.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+               <!-- <a href="www.facebook.com"><i class="bi bi-facebook"></i></a>-->
+              </div>
+            </div>
+        </nav>
+       
     </header>
-     <hr><hr>
+
  <!--secction / contenido-->
-     <section>
-            <h2>FORMULARIO DE CONTACTO</h2>
-            <hr>
+    <div class="container">
+        <section>
+            <h2>CONTACTENOS</h2>
             <form action="">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre"> 
-                    <hr><br>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido">
-                    <hr><br>
-                    <label for="mail">Mail de contacto</label>
-                    <input type="email" id="mail">
-                    <hr><br>
-                    <select>
-                        <option selected="selected" value="">Selecciona tu provincia</option>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre"> 
+                        </div>
+                        <div class="col">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>    
+                    </div>
+                    <label for="mail" class="form-label">Mail de contacto</label>
+                    <input type="email" class="form-control" id="mail">
+                   
+                    <label for="provincia" class="form-label">Selecciona tu provincia</label>
+                    <select class="form-select">
+                        
                         <option value="Buenos aires">Buenos Aires</option>
-                        <option value="">Ciudad Aut&0acutenoma de Buenos Aires</option>
+                        <option selected ="select" value="">Ciudad Aut&oacutenoma de Buenos Aires</option>
                         <option value="">Catamarca</option>
                         <option value="">Chaco</option>
                         <option value="">Chubut</option>
@@ -54,43 +75,66 @@
                         <option value="">Entre R&iacuteos</option>
                                         
                     </select>
-                    <hr><br>
-                    <label for="consulta">Tu consulta</label>
-                    <br>
-                    <textarea name="" id="consulta" cols="50" rows="10"></textarea>
-                    <hr><br>
-                    <label> quieres recibir las novedades de SGS?</label>
-                    <input type="checkbox" name="" id="">
-                    <hr><br>
-                    <input type="submit">
-                    <input type="reset">
-                </form>
-     </section>
-     <hr><hr>
-<!--Comienza el footer-->
-<footer class="footer">
-    <div>
-        <h5>
-            Direci&oacuten <br> 
-            Av. Paseo colon 717 Piso 3 depto 5 <br> 
-            Ciudad aut&oacutemoma de buenos aires
-        </h5>
-    </div>
-    <div >
-        <h5>Redes <br>
-            <img class="imagenlink" src="../img/instagram3.PNG" alt="">
-            <img class="imagenlink" src="../img/Twitter2.png" alt="">
-            <img class="imagenlink" src="../img/whatsapp.png" alt="">
+                    
+                    <label for="consulta" class="form-label">Tu consulta</label>
+                    <textarea class="form-control" id="consulta" cols="50" rows="10"></textarea>
+                    
+                    
+                    <div class="form-check form-switch">
+                        <input type="checkbox"  class ="form-check-input mt-2 mb-2" role="switch" id="check">
+                        <label class="form-check-label mt-2 mb-2" for="check"> Quieres recibir las novedades de SGS?</label>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary">
+                    
+            </form>
             
-        </h5>
+        </section>
     </div>
-    <div >
-        <h5>
-            Contacto
-            <br>
-                Email: SGSsistemas@sgs.com
-            </h5>
-    </div>
+    
+<!--Comienza el footer-->
+
+<footer class="footerbootstrap">
+    <div class="container-fluid">
+        <div class="row mt-4 ">
+            <div class="col mt-2">
+                <h5 class="h5">Direci&oacuten</h5>
+                <h6 class="h6">Av. Paseo colon 717 Piso 3 depto 5</h6> 
+                <h6 class="h6">Ciudad aut&oacutemoma de buenos aires</h6>
+              
+            </div>
+            <div class="col-4 mt-2">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.521953177859!2d-58.37174648461475!3d-34.61624796566859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d51c944ed1%3A0x4da0ac0932d90fe6!2sInstituto%20Nacional%20de%20la%20Propiedad%20Industrial!5e0!3m2!1ses-419!2sar!4v1656353895342!5m2!1ses-419!2sar" 
+                width="100%" 
+                height="150" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+
+            </div>
+            <div class="col mt-2">
+                
+                <h5>Seguinos en la redes</h5>    
+                <img class="imagenlink" src="../img/instagram3.PNG" alt="instragam">
+                <img class="imagenlink" src="../img/Twitter2.png" alt="twitter">
+                <img class="imagenlink" src="../img/whatsapp.png" alt="whatsapp">
+                
+            </div>
+            <div class="col mt-2">
+                <h5>Contactos</h5>
+                <h5>Email: SGSsistemas@sgs.com</h5>
+                <h5>Tel&eacutefono: 011 4344-4888</h5>
+            </div>
+    </div>   
 </footer>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>

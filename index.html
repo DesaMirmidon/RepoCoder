@@ -7,72 +7,182 @@
     <title>SGC - Company</title>
     <link rel="stylesheet" type="text/css" href="./style/styles.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 </head>
-<body >
-<!--Comienza el header-->
-<div class="layout">
-    <div class="header">
-        <header>
-            
-                <div>
-                     <h1>SGS - Company en una rama nueva</h1>
-                </div>
-
-        </header>
-    </div>
-    <div class="nav">
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/services.html">Servicios</a></li>
-                <li><a href="./pages/customers. html">Nuestros clientes</a></li>
-                <li><a href="./pages/about.html">Sobre nosotros</a></li>
-                <li><a href="./pages/contact.html">Contacto</a> </li>
+<body class="bodybootstrap">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid navbootstrap">
+          <a class="navbar-brand" href="#">SGS - Company</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/services.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/customers.html">Nuestros Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contactos</a>
+              </li>
             </ul>
-        </nav>
-    </div>
+           <!-- <a href="www.facebook.com"><i class="bi bi-facebook"></i></a>-->
+          </div>
+        </div>
+    </nav>
+<!--Comienza el header-->   
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/codigo.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/paso a paso.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/plan.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+</header>
+
 <!--Comienza el contenido secction / contenido-->
-    <div class="section">
-        <section class="article">
-            <!--
-                La idea es poder describir los beneficios de contratar nuestro servicio profesional o adquirir nuestro software.
-                viendo en las clases que se puede poner una foto al fondo y realizar efectos, vamos a intentar realizarlo,.
-            -->
-                <article>
-                </article>
-                <article>
-
-                </article> 
-
-                <article>
-
-                    
-                </article> 
-        </section>
+    <section>
+    <div class="contanier">
+        <div class="row mt-3">
+            <h3 class="h3">Tu certificaci&oacuten en solo 4 pasos</h3>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 estilotarjetas">
+                            <h1 class="display-1 ">1</h1>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Relevamiento</h5>
+                            <p class="card-text">Nuestro equipo de analistas, entrevistara y documentara todos tus procesos actuales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-4 estilotarjetas">
+                        <h1 class="display-1">2</h1>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Definimos el alacance</h5>
+                        <p class="card-text">Definimos el alcance de de tu certificacion.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-4 estilotarjetas">
+                            <h1 class="display-1">3</h1>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Implementamos el SGC</h5>
+                        <p class="card-text">Implementamos el sistema de gestion de la calidad, acompañando a tu equipo en cada paso.</p>
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0 ">
+                        <div class="col-md-4 estilotarjetas">
+                            <h1 class="display-1">4</h1>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body "> 
+                            <h5 class="card-title">Certrificacion</h5>
+                            <p class="card-text">Felicitaciones, tienes tu certificado, bienvenido al mundo de deming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-<!--Comienza el footer-->
-    <div class="footer">
-        <footer class="estilo">
-            <div>
-                <h5>Direci&oacuten</h5>
-                <h5>Av. Paseo colon 717 Piso 3 depto 5</h5> 
-                <h5>Ciudad aut&oacutemoma de buenos aires</h5>
+    </section>
+ <!--Comienza el footer-->
+<footer class="footerbootstrap">
+    <div class="container-fluid">
+        <div class="row mt-4 ">
+            <div class="col mt-2">
+                <h5 class="h5">Direci&oacuten</h5>
+                <h6 class="h6">Av. Paseo colon 717 Piso 3 depto 5</h6> 
+                <h6 class="h6">Ciudad aut&oacutemoma de buenos aires</h6>
+              
             </div>
-            <div>
-                <h5>Redes</h5>    
-                <img class="imagenlink" src="./img/instagram3.PNG" alt="instragam">
-                <img class="imagenlink" src="./img/Twitter2.png" alt="twitter">
-                <img class="imagenlink" src="./img/whatsapp.png" alt="whatsapp">
-                    
-                </h5>
+            <div class="col-4 mt-2">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.521953177859!2d-58.37174648461475!3d-34.61624796566859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d51c944ed1%3A0x4da0ac0932d90fe6!2sInstituto%20Nacional%20de%20la%20Propiedad%20Industrial!5e0!3m2!1ses-419!2sar!4v1656353895342!5m2!1ses-419!2sar" 
+                width="100%" 
+                height="150" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+
             </div>
-            <div>
+            <div class="col mt-2">
+                
+                <h5>Seguinos en la redes</h5>    
+                <img class="imagenlink" src="../img/instagram3.PNG" alt="instragam">
+                <img class="imagenlink" src="../img/Twitter2.png" alt="twitter">
+                <img class="imagenlink" src="../img/whatsapp.png" alt="whatsapp">
+                
+            </div>
+            <div class="col mt-2">
                 <h5>Contactos</h5>
                 <h5>Email: SGSsistemas@sgs.com</h5>
                 <h5>Tel&eacutefono: 011 4344-4888</h5>
             </div>
-        </footer>
-    </div>
-</div>
+    </div>   
+</footer>
+
+<!--seccion de script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
