@@ -2,4 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  grid-area: footer;
+}
+.footer .estilo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(75, 35, 35);
+}
+
+.footerbootstrap {
+  background-color: rgb(214, 220, 233);
+}
+
+.navbootstrap {
+  background-color: rgb(225, 232, 245);
+}
+
+.bodybootstrap {
+  background-color: rgb(225, 232, 245);
+}
+
+.estilotarjetas {
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenprincipal {
+  width: 250px;
+  height: 250px;
+}
+
+.imagenlink {
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=estilos.css.map */

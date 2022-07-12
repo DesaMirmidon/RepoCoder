@@ -1,1 +1,38 @@
-@import "./csss/reset";
+@import "./scss/reset";
+@import "./scss/variables";
+
+.footer{
+    grid-area: footer;
+
+    .estilo {
+   
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(75, 35, 35);
+    }
+}
+.footerbootstrap{
+    background-color: rgb(214, 220, 233);
+}
+.navbootstrap{
+    background-color: $colorNav //rgb(225, 232, 245);
+}
+.bodybootstrap{
+    background-color: $colorBody;// rgb(225, 232, 245);
+}
+.estilotarjetas{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+}
+.imagenprincipal{
+    width: 250px;
+    height: 250px;
+}
+
+.imagenlink{
+    width: 40px;
+    height: 40px;
+}
